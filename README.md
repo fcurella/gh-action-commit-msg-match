@@ -1,1 +1,1 @@
-# gh-action-skipornot
+# gh-action-commit-msg-match
