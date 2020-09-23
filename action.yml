@@ -1,0 +1,16 @@
+name: 'Check commit subject'
+description: 'Check the commit subject against a list of strings'
+branding:
+  icon: 'clock'
+  color: 'orange'
+inputs:
+  matchWords:
+    description: 'CSV of strings to check'
+    required: false
+    default: 'skip ci'
+outputs:
+  match:
+    description: 'true or false'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
